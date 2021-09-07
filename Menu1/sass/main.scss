@@ -142,6 +142,8 @@ a{
     position: relative;
     line-height: 55%;
     border-radius: 1.5vw;
+    animation:appear 2s;
+    animation-fill-mode: both;
     @include box-shadow;
     @include breakpoints(mobile) {
       width: 92%;
@@ -158,6 +160,27 @@ a{
     }
   }
 }
+.fststarter{animation-delay:.5s;}
+.scdstarter{animation-delay:1s;}
+.thdstarter{animation-delay:1.5s;}
+.fthstarter{animation-delay:2s;}
+.fstmain{animation-delay:2.5s;}
+.scdmain{animation-delay:3s;}
+.thdmain{animation-delay:3.5s;}
+.fstdessert{animation-delay:4s;}
+.scddessert{animation-delay:4.5s;}
+.thddessert{animation-delay:5s;}
+
+
+@keyframes appear{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
 .details {
   width: 83%;
   text-overflow: ellipsis;

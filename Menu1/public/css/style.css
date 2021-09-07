@@ -163,6 +163,8 @@ a {
   position: relative;
   line-height: 55%;
   border-radius: 1.5vw;
+  animation: appear 2s;
+  animation-fill-mode: both;
   box-shadow: 0 4px 5px 0 #bfbfbf, 0 6px 20px 0 #cccccc;
 }
 @media screen and (max-width: 480px) {
@@ -183,6 +185,54 @@ a {
   }
 }
 
+.fststarter {
+  animation-delay: 0.5s;
+}
+
+.scdstarter {
+  animation-delay: 1s;
+}
+
+.thdstarter {
+  animation-delay: 1.5s;
+}
+
+.fthstarter {
+  animation-delay: 2s;
+}
+
+.fstmain {
+  animation-delay: 2.5s;
+}
+
+.scdmain {
+  animation-delay: 3s;
+}
+
+.thdmain {
+  animation-delay: 3.5s;
+}
+
+.fstdessert {
+  animation-delay: 4s;
+}
+
+.scddessert {
+  animation-delay: 4.5s;
+}
+
+.thddessert {
+  animation-delay: 5s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .details {
   width: 83%;
   text-overflow: ellipsis;
