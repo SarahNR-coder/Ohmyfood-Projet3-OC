@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+}
+@font-face {
+  font-family: "Shrikhand", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3vw;
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 5vw;
+  }
+}
+
+h1, h2 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9356DC;
+  height: 10vw;
+}
+@media screen and (max-width: 480px) {
+  header {
+    height: 15vw;
+    background: white;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc3R5bGUuY3NzIiwiLi4vLi4vLi4vc2Fzcy9VdGlscy9fbWl4aW5zLnNjc3MiLCIuLi8uLi8uLi9zYXNzL1V0aWxzL192YXJpYWJsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNJLGlDQUFBO0VBQ0EsaUZBQUE7QUNGSjtBRElBO0VBQ0ksaUNBQUE7RUFDQSwyRUFBQTtBQ0ZKO0FES0E7RUFFSSxpQ0FBQTtFQUNBLGdCQUFBO0FDSko7QUNMSztFRk1MO0lBS1EsY0FBQTtFQ0ZOO0FBQ0Y7O0FES0E7RUFFSSxnQkFBQTtFQUNBLGlCQUFBO0FDSEo7O0FETUE7RUFFSSxjQUFBO0VBQ0EsaUJBQUE7QUNKSjs7QURPQTtFQUNJLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0Esd0JBQUE7TUFBQSxxQkFBQTtVQUFBLHVCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0VBQ0EsbUJHckNTO0VIc0NULFlBQUE7QUNKSjtBQzVCSztFRjJCTDtJQU9RLFlBQUE7SUFDQSxpQkFBQTtFQ0ZOO0FBQ0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

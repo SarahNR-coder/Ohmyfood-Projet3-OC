@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ohmyfood!</title>
+    <!-- Device scaling-->
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+    />
+    <!--Roboto font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Shrikhand font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to css file-->
+    <link rel="stylesheet" href="public/css/style.css" />
+    <!--Icons integration-->
+    <script
+      src="https://kit.fontawesome.com/4cf7c2f3d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="loading1"></div>
+    <div class="loading2"></div>
+    <div class="loading3"></div>
+    <div class="page">
+      <header>
+        <img class="logo" src="images/ohmyfood.png" alt="Oh my food!" />
+      </header>
+      <section class="location">
+        <p><span class="fa fa-map-marker"></span>Paris, Belleville</p>
+      </section>
+      <section class="reservation">
+        <article class="btnBlock">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </p>
+          <a href="#to-menus"><button class="btn">Explorer nos restaurants</button></a>
+        </article>
+        <article class="procedure">
+          <h2>Fonctionnement</h2>
+          <div class="procedure__disposition">
+            <div
+              class="
+                procedure__disposition__line procedure__disposition__line--space
+              "
+            >
+              <p>
+                <span>1</span>
+                <span class="fa fa-mobile" aria-hidden="true"></span>
+                <span>Choisissez un restaurant</span>
+              </p>
+            </div>
+            <div class="procedure__disposition__line">
+              <p>
+                <span>2</span>
+                <span class="fa fa-list-ul" aria-hidden="true"></span>
+                <span>Composez votre menu</span>
+              </p>
+            </div>
+            <div
+              class="
+                procedure__disposition__line procedure__disposition__line--color
+              "
+            >
+              <p>
+                <span>3</span>
+                <span class="fas fa-store"></span>
+                <span>Dégustez au restaurant</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="to-menus">
+        <h2 class="restaurants">Restaurants</h2>
+        <div class="option-disposition">
+          <article class="option option--new">
+            <a href="Menu3/index.html">
+              <img src="images/Menu3LPDG.jpg" alt="La palette du goût" />
+              <div class="option__down">
+                <div class="option__description">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <div class="option__check">
+                  <span
+                    class="fa fa-heart-o fa-heart"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <span class="new">Nouveau</span>
+              </div>
+            </a>
+          </article>
+          <article class="option option--new">
+            <a href="Menu2/index.html">
+              <img src="images/Menu2LNE.jpg" alt="La note enchantée" />
+              <div class="option__down">
+                <div class="option__description">
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                </div>
+                <div class="option__check">
+                  <span
+                    class="fa fa-heart-o fa-heart"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <span class="new">Nouveau</span>
+              </div>
+            </a>
+          </article>
+          <article class="option">
+            <a href="Menu1/index.html">
+              <img src="images/Menu1ALF.jpg" alt="À la française" />
+              <div class="option__down">
+                <div class="option__description">
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
+                </div>
+                <div class="option__check">
+                  <span
+                    class="fa fa-heart-o fa-heart"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="option">
+            <a href="Menu4/index.html">
+              <img src="images/Menu4LDDS.jpg" alt="Le délice des sens" />
+              <div class="option__down">
+                <div class="option__description">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <div class="option__check">
+                  <span
+                    class="fa fa-heart-o fa-heart"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <h3 class="stylized">ohmyfood</h3>
+        <a href=""><p><span class="fas fa-utensils"></span>Proposer un restaurant</p></a>
+        <a href=""><p><span class="fas fa-hands-helping"></span>Devenir partenaire</p></a>
+        <a href=""><p>Mentions légales</p></a>
+        <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
+      </footer>
+    </div>
+  </body>
+</html>
