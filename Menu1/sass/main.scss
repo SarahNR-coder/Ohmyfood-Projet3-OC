@@ -136,27 +136,28 @@ a{
   }
   &__element {
     background-color: white;
-    width: 28vw;
     padding: 0.1vw 0 0.1vw 1.5vw;
-    margin: 0.7vw 0 0.7vw 0;
-    position: relative;
+    margin: 1.5vw 0 1.5vw 0;
+    width:28vw;
     line-height: 55%;
     border-radius: 1.5vw;
-    animation:appear 2s;
-    animation-fill-mode: both;
+    animation:appear 2s ease-in-out both;
+    display:flex;
+    overflow:hidden;
+    &:hover > .formula{
+      animation: slide-reduce 2s ease-in-out both;
+    }
+    &:not(:hover) >.formula{
+      animation:slide-reduce-reverse 2s ease-in-out both;
+    }
+    &:hover> .check span{
+      animation: rotate 1.8s ease-in-out both;
+    }
     @include box-shadow;
     @include breakpoints(mobile) {
       width: 92%;
       margin: 3vw 0 3.5vw 0;
       border-radius: 4vw;
-    }
-    p:last-child {
-      position: absolute;
-      right: 1.5vw;
-      top: 42%;
-      @include breakpoints(mobile) {
-        right: 5vw;
-      }
     }
   }
 }
@@ -180,18 +181,75 @@ a{
     opacity:1;
   }
 }
+.formula{
+  display:flex;
+  justify-content: space-between;
+  width:28vw;
+}
+.content{
+  min-width:0;
+  width:24vw;
+}
 
-.details {
-  width: 83%;
-  text-overflow: ellipsis;
+.name{
+  padding: 0.25vw 0 0.5vw 0;
+  margin:.8vw 0 .8vw 0;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.details {
   padding: 0.2vw 0 0.37vw 0;
+  margin:.6vw 0 .6vw 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
   @include breakpoints(mobile) {
     padding: 0.9vw 0 1.1vw 0;
   }
 }
 
+.price{
+  padding:2vw .3vw 0 .4vw;
+  width:4vw;
+}
+.check{
+  background-color: $clr-tertiary;
+  color:white;
+  font-size:1.6em;
+  text-align:center;
+  padding: 1.5vw 1.7vw 1.5vw 1.7vw;
+  span{
+   transform:rotate(360deg);
+  }
+}
+
+@keyframes slide-reduce{
+  0%{
+    width:28vw;
+  }
+  100%{
+    width:22.5vw;
+  }
+}
+@keyframes slide-reduce-reverse{
+  0%{
+    width:22.5vw;
+  }
+  100%{
+    width:28vw;
+  }
+}
+
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
 .course hr {
   background-color: $clr-tertiary;
   height: 0.25vw;
