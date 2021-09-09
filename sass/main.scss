@@ -13,6 +13,9 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.3vw;
+  @include breakpoints(pad){
+    font-size:2.5vw;
+  }
   @include breakpoints(mobile) {
     font-size: 5vw;
   }
@@ -45,7 +48,7 @@ h3 {
   left: 30%;
   animation: loading 3s ease-in-out forwards;
   pointer-events: none;
-  @include breakpoints(mobile) {
+  @include breakpoints(pad) {
     font-size: 2.5em;
     top: 25%;
     left: 25%;
@@ -68,7 +71,7 @@ h3 {
   left: 39.5%;
   animation: loading 2s ease-in-out 1s forwards;
   pointer-events: none;
-  @include breakpoints(mobile) {
+  @include breakpoints(pad) {
     font-size: 2.5em;
     top: 40%;
     left: 40%;
@@ -91,7 +94,7 @@ h3 {
   left: 50.5%;
   animation: loading 1s ease-in-out 2s forwards;
   pointer-events: none;
-  @include breakpoints(mobile) {
+  @include breakpoints(pad) {
     font-size: 2.5em;
     top: 55%;
     left: 55%;
@@ -162,7 +165,7 @@ header {
 .reservation {
   display: flex;
   justify-content: space-around;
-  @include breakpoints(mobile) {
+  @include breakpoints(pad){
     flex-direction: column;
   }
 }
@@ -172,9 +175,9 @@ header {
   background: $clr-grey-light;
   text-align: center;
   padding: 1.2vw;
-  @include breakpoints(mobile) {
+  @include breakpoints (pad){
     width: 100%;
-    background-color: $clr-grey-xlight;
+    background-color:$clr-grey-xlight;
   }
 }
 .btn {
@@ -201,6 +204,11 @@ header {
       @include box-shadow-plus-mobile;
     }
   }
+  @include breakpoints (pad){
+    border-radius: 4.5vw;
+    padding: 2vw 3vw 2vw 3vw;
+    margin: 0 0 4vw 0;
+  }
   @include breakpoints(mobile) {
     border-radius: 7vw;
     padding: 5vw 6.5vw 5vw 6.5vw;
@@ -221,9 +229,9 @@ header {
   width: 30%;
   background-color: $clr-grey-light;
   padding: 1.2vw;
-  @include breakpoints(mobile) {
-    width: 100%;
-    background-color: white;
+  @include breakpoints(pad){
+    width:100%;
+    background-color:white;
   }
   h2 {
     padding: 0 0 0 3vw;
@@ -241,11 +249,15 @@ header {
       margin: 0.5vw 0 0.5vw 0;
       position: relative;
       @include box-shadow;
-      @include breakpoints(mobile) {
-        width: 90%;
-        border-radius: 5.5vw;
+      @include breakpoints(pad){
+        width: 45%;
         background-color: $clr-grey-xlight;
-        margin: 2vw;
+        margin:1vw;
+      }
+      @include breakpoints(mobile) {
+        width:90%;
+        border-radius:5.5vw;
+        margin:2vw;
       }
       span:first-child {
         position: absolute;
@@ -258,6 +270,12 @@ header {
         height: 1.6vw;
         left: -1vw;
         font-size: 0.8em;
+        @include breakpoints (pad){
+          width:2.4vw;
+          height:2.4vw;
+          left: -1.2vw;
+          line-height: 1.18em;
+        }
         @include breakpoints(mobile) {
           width: 5.5vw;
           height: 5.5vw;
@@ -294,6 +312,10 @@ header {
   display: flex;
   justify-content: space-around;
   height: 20vw;
+  @include breakpoints(pad){
+    flex-wrap:wrap;
+    height:80vw;
+  }
   @include breakpoints(mobile) {
     flex-direction: column;
     align-items: center;
@@ -306,6 +328,10 @@ header {
   position: relative;
   @include box-shadow;
   border-radius: 2vw;
+  @include breakpoints (pad){
+    width:47%;
+    height:30vw;
+  }
   @include breakpoints(mobile) {
     width: 90%;
     height: 63vw;
@@ -319,8 +345,10 @@ header {
       height: 60%;
       object-fit: cover;
       border-radius: 1.7vw 1.7vw 0 0;
+      @include breakpoints (pad) {
+        height:72%;
+      }
       @include breakpoints(mobile) {
-        height: 72%;
         border-radius: 3.5vw 3.5vw 0 0;
       }
     }
@@ -332,8 +360,13 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @include breakpoints (pad){
+    justify-content:space-between;
+    height:28%;
+    margin:0 4vw 0 2.1vw;
+  }
   @include breakpoints(mobile) {
-    height: 28%;
+    margin: 0 6.5vw 0 4vw;
   }
 }
 
@@ -388,6 +421,11 @@ header {
   position: absolute;
   right: 0.9vw;
   top: 0.9vw;
+  @include breakpoints(pad){
+    padding: 1.2vw 2.5vw 1.2vw 2.5vw;
+    right: 1.8vw;
+    top:1.8vw;
+  }
   @include breakpoints(mobile) {
     font-size: 0.8em;
     padding: 1.8vw 3.8vw 1.8vw 3.8vw;

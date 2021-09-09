@@ -10,6 +10,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.3vw;
 }
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 2.5vw;
+  }
+}
 @media screen and (max-width: 480px) {
   body {
     font-size: 5vw;
@@ -44,7 +49,7 @@ h3 {
   animation: loading 3s ease-in-out forwards;
   pointer-events: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .loading1::after {
     font-size: 2.5em;
     top: 25%;
@@ -69,7 +74,7 @@ h3 {
   animation: loading 2s ease-in-out 1s forwards;
   pointer-events: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .loading2::after {
     font-size: 2.5em;
     top: 40%;
@@ -94,7 +99,7 @@ h3 {
   animation: loading 1s ease-in-out 2s forwards;
   pointer-events: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .loading3::after {
     font-size: 2.5em;
     top: 55%;
@@ -175,7 +180,7 @@ header {
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .reservation {
     flex-direction: column;
   }
@@ -187,7 +192,7 @@ header {
   text-align: center;
   padding: 1.2vw;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .btnBlock {
     width: 100%;
     background-color: #f2f2f2;
@@ -213,6 +218,13 @@ header {
     box-shadow: 0.3vw 0.8vw 1.8vw #262626, 0.4vw 1vw 1.6vw #e5e5e5;
   }
 }
+@media screen and (max-width: 900px) {
+  .btn {
+    border-radius: 4.5vw;
+    padding: 2vw 3vw 2vw 3vw;
+    margin: 0 0 4vw 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .btn {
     border-radius: 7vw;
@@ -236,7 +248,7 @@ header {
   background-color: #e5e5e5;
   padding: 1.2vw;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .procedure {
     width: 100%;
     background-color: white;
@@ -260,11 +272,17 @@ header {
   position: relative;
   box-shadow: 0 4px 5px 0 #bfbfbf, 0 6px 20px 0 #cccccc;
 }
+@media screen and (max-width: 900px) {
+  .procedure__disposition__line {
+    width: 45%;
+    background-color: #f2f2f2;
+    margin: 1vw;
+  }
+}
 @media screen and (max-width: 480px) {
   .procedure__disposition__line {
     width: 90%;
     border-radius: 5.5vw;
-    background-color: #f2f2f2;
     margin: 2vw;
   }
 }
@@ -279,6 +297,14 @@ header {
   height: 1.6vw;
   left: -1vw;
   font-size: 0.8em;
+}
+@media screen and (max-width: 900px) {
+  .procedure__disposition__line span:first-child {
+    width: 2.4vw;
+    height: 2.4vw;
+    left: -1.2vw;
+    line-height: 1.18em;
+  }
 }
 @media screen and (max-width: 480px) {
   .procedure__disposition__line span:first-child {
@@ -318,6 +344,12 @@ header {
   justify-content: space-around;
   height: 20vw;
 }
+@media screen and (max-width: 900px) {
+  .option-disposition {
+    flex-wrap: wrap;
+    height: 80vw;
+  }
+}
 @media screen and (max-width: 480px) {
   .option-disposition {
     flex-direction: column;
@@ -332,6 +364,12 @@ header {
   position: relative;
   box-shadow: 0 4px 5px 0 #bfbfbf, 0 6px 20px 0 #cccccc;
   border-radius: 2vw;
+}
+@media screen and (max-width: 900px) {
+  .option {
+    width: 47%;
+    height: 30vw;
+  }
 }
 @media screen and (max-width: 480px) {
   .option {
@@ -350,9 +388,13 @@ header {
   object-fit: cover;
   border-radius: 1.7vw 1.7vw 0 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .option a img {
     height: 72%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .option a img {
     border-radius: 3.5vw 3.5vw 0 0;
   }
 }
@@ -363,9 +405,16 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 900px) {
+  .option__down {
+    justify-content: space-between;
+    height: 28%;
+    margin: 0 4vw 0 2.1vw;
+  }
+}
 @media screen and (max-width: 480px) {
   .option__down {
-    height: 28%;
+    margin: 0 6.5vw 0 4vw;
   }
 }
 
@@ -415,6 +464,13 @@ header {
   position: absolute;
   right: 0.9vw;
   top: 0.9vw;
+}
+@media screen and (max-width: 900px) {
+  .new {
+    padding: 1.2vw 2.5vw 1.2vw 2.5vw;
+    right: 1.8vw;
+    top: 1.8vw;
+  }
 }
 @media screen and (max-width: 480px) {
   .new {
