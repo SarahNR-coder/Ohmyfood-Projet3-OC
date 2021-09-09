@@ -101,11 +101,9 @@ header {
       $clr-secondary,
       $clr-primary
     );
-    background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: transparent;
   }
 }
 
@@ -312,6 +310,7 @@ a{
 }
 
 .btn {
+  display:inline-block;
   margin: 4vw 0 4vw 0;
   position: relative;
   left: 41%;

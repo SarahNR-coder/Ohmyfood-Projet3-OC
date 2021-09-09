@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <!-- link to css file-->
-    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/prefixed/style.css" />
     <!--Icons integration-->
     <script
       src="https://kit.fontawesome.com/4cf7c2f3d5.js"
@@ -38,16 +38,16 @@
       <header>
         <img class="logo" src="images/ohmyfood.png" alt="Oh my food!" />
       </header>
-      <section class="location">
+      <div class="location">
         <p><span class="fa fa-map-marker"></span>Paris, Belleville</p>
-      </section>
-      <section class="reservation">
+      </div>
+      <div class="reservation">
         <article class="btnBlock">
           <h1>Réservez le menu qui vous convient</h1>
           <p>
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </p>
-          <a href="#to-menus"><button class="btn">Explorer nos restaurants</button></a>
+          <a href="#to-menus" class="btn">Explorer nos restaurants</a>
         </article>
         <article class="procedure">
           <h2>Fonctionnement</h2>
@@ -83,7 +83,7 @@
             </div>
           </div>
         </article>
-      </section>
+      </div>
       <section id="to-menus">
         <h2 class="restaurants">Restaurants</h2>
         <div class="option-disposition">

@@ -121,11 +121,9 @@ header {
 .fa-heart-o:hover {
   animation: heart 1000ms ease-in-out 0s both;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: transparent;
 }
 
 @keyframes heart {
@@ -391,6 +389,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   margin: 4vw 0 4vw 0;
   position: relative;
   left: 41%;
