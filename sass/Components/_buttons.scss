@@ -1,0 +1,37 @@
+.btn {
+    display:inline-block;
+    text-decoration:none;
+    margin: 3vw 0 0 0;
+    padding: 1.3vw 1.5vw 1.3vw 1.5vw;
+    border-radius: 2vw;
+    color: white;
+    background-image:linear-gradient(
+      to bottom right,
+      $clr-secondary,
+      $clr-primary
+    );
+    border: none;
+    @include box-shadow;
+    font-size: 1em;
+    &:hover {
+      background-image:linear-gradient(
+        to bottom right,
+        lighten($clr-secondary, 10%),
+        lighten($clr-primary, 10%)
+      );
+      @include box-shadow-plus;
+      @include breakpoints(mobile) {
+        @include box-shadow-plus-mobile;
+      }
+    }
+    @include breakpoints(pad){
+      border-radius: 4.5vw;
+      padding: 2vw 3vw 2vw 3vw;
+      margin: 1vw 0 6vw 0;
+    }
+    @include breakpoints(mobile){
+      border-radius: 7vw;
+      padding: 4vw 6vw 4vw 6vw;
+      margin: 3vw 0 10vw 0;
+    }
+  }

@@ -1,0 +1,16 @@
+.location {
+    @include breakpoints(mobile) {
+      text-align: center;
+      background-color: $clr-grey-light;
+      font-size: 0.8em;
+      padding: 1vw 0 1vw 0;
+      margin: 0;
+      width: 100%;
+    }
+    span {
+      padding: 0 1vw 0 0;
+      @include breakpoints(mobile) {
+        padding: 0 3vw 0 0;
+      }
+    }
+  }

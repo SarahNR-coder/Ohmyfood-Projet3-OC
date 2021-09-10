@@ -1,0 +1,36 @@
+.btn {
+    display:inline-block;
+    margin: 4vw 0 4vw 0;
+    position: relative;
+    left: 41%;
+    padding: 1.3vw 4.5vw 1.3vw 4.5vw;
+    border-radius: 2vw;
+    color: white;
+    background-image: linear-gradient(
+      to bottom right,
+      $clr-secondary,
+      $clr-primary
+    );
+    border: none;
+    @include box-shadow;
+    font-size: 1em;
+    &:hover {
+      background-image: linear-gradient(
+        to bottom right,
+        lighten($clr-secondary, 10%),
+        lighten($clr-primary, 10%)
+      );
+      @include box-shadow-plus;
+      @include breakpoints(mobile) {
+        @include box-shadow-plus-mobile;
+      }
+    }
+    @include breakpoints(mobile) {
+      border-radius: 7vw;
+      padding: 3.5vw 8vw 3.5vw 8vw;
+      font-size: 0.8em;
+      margin: 5vw 0 10vw 0;
+      left: 26%;
+      font-size: 1.25em;
+    }
+  }

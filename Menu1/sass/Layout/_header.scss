@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $clr-primary;
+    height: 10vw;
+    @include breakpoints(mobile){
+      background: white;
+      height: 15vw;
+    }
+  }
+  .fa-arrow-left {
+    position: absolute;
+    left: 1.5vw;
+    top: 1.5vw;
+    color: black;
+    text-decoration: none;
+    @include breakpoints(mobile){
+      left: 7vw;
+      top: 7vw;
+    }
+  }
+  .logo {
+    height: 50%;
+    @include breakpoints(mobile){
+      width: 50%;
+      height: auto;
+    }
+  }

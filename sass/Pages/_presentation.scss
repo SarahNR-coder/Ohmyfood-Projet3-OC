@@ -1,0 +1,103 @@
+.presentation{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    @include breakpoints(pad){
+      flex-direction: column;
+    }
+  }
+  .btnBlock {
+    width: 30%;
+    background: $clr-grey-light;
+    text-align: center;
+    padding: 1.2vw;
+    @include breakpoints(pad){
+      width: 100%;
+      background-color:$clr-grey-xlight;
+      padding:0;
+    }
+  }
+  .procedure {
+    width: 30%;
+    background-color: $clr-grey-light;
+    padding: 1.2vw;
+    @include breakpoints(pad){
+      width:100%;
+      background-color:white;
+    }
+    h2 {
+      padding: 0 0 0 3vw;
+    }
+    &__disposition {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      &__line {
+        width: 80%;
+        background-color: white;
+        border-radius: 2vw;
+        padding: 0.2vw 0 0.2vw 0;
+        margin: 0.5vw 0 0.5vw 0;
+        position: relative;
+        @include box-shadow;
+        @include breakpoints(pad){
+          width: 45%;
+          background-color: $clr-grey-xlight;
+          margin:1vw;
+        }
+        @include breakpoints(mobile) {
+          width:90%;
+          border-radius:5.5vw;
+          margin:2vw;
+        }
+        span:first-child {
+          position: absolute;
+          text-align: center;
+          color: #fff;
+          border-radius: 50%;
+          background-color: $clr-primary;
+          line-height: 1.65em;
+          width: 1.6vw;
+          height: 1.6vw;
+          left: -1vw;
+          font-size: 0.8em;
+          @include breakpoints (pad){
+            width:2.4vw;
+            height:2.4vw;
+            left: -1.2vw;
+            line-height: 1.18em;
+          }
+          @include breakpoints(mobile) {
+            width: 5.5vw;
+            height: 5.5vw;
+            left: -2.2vw;
+            line-height: 1.38em;
+          }
+        }
+        span:nth-child(2) {
+          color: grey;
+          padding: 0 1.4vw 0 2.3vw;
+          @include breakpoints(mobile) {
+            padding: 0 4vw 0 7vw;
+          }
+        }
+        &--space {
+          span:nth-child(2) {
+            font-size: 1.2em;
+            padding: 0 1.6vw 0 2.3vw;
+            @include breakpoints(mobile) {
+              padding: 0 4.6vw 0 7vw;
+            }
+          }
+        }
+        &--color {
+          background-color: lighten($clr-primary, 36%);
+          color: $clr-primary;
+          span:nth-child(2){
+            color:$clr-primary;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,190 @@
+.menu {
+    background-color: $clr-grey-xlight;
+    @include breakpoints(mobile){
+      border-radius: 10vw 10vw 0 0;
+      position: relative;
+      top: -12vw;
+      margin-bottom:-12vw;
+    }
+  }
+  .menu-header {
+    position: relative;
+    left: 35%;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoints(mobile){
+      position: static;
+      width: 100%;
+      padding: 4vw 0 0 0;
+    }
+  }
+  .fa-heart-o {
+    font-size: 1.5em;
+    &:hover {
+      animation: heart 1000ms ease-in-out 0s both;
+      background-image: linear-gradient(
+        to bottom right,
+        $clr-secondary,
+        $clr-primary
+      );
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+  
+  a{
+    color:black;
+    text-decoration:none;
+  }
+  .menu-body {
+    display: flex;
+    justify-content: space-around;
+    @include breakpoints(pad){
+      flex-direction:column;
+      align-items: center;
+    }
+    @include breakpoints(mobile) {
+      padding: 0 0 0 3vw;
+    }
+    &__element {
+      background-color: white;
+      padding: 0.1vw 0 0.1vw 1.5vw;
+      margin: 1.5vw 0 1.5vw 0;
+      width:28vw;
+      line-height: 55%;
+      border-radius: 1.5vw;
+      animation:appear 2s ease-in-out both;
+      display:flex;
+      overflow:hidden;
+      &:hover > .option{
+        animation: slide-reduce 2s ease-in-out both;
+      }
+      &:not(:hover) >.option{
+        animation:slide-increase 2s ease-in-out both;
+      }
+      &:hover> .check span{
+        animation: rotate 1.8s ease-in-out both;
+      }
+      @include box-shadow;
+      @include breakpoints(pad){
+        width: 55vw;
+        line-height:100%;
+      }
+      @include breakpoints(mobile) {
+        width: 85vw;
+        margin: 3vw 0 3.5vw 0;
+        border-radius: 4vw;
+      }
+    }
+  }
+  .fststarter{animation-delay:.5s;}
+  .scdstarter{animation-delay:1s;}
+  .thdstarter{animation-delay:1.5s;}
+  .fthstarter{animation-delay:2s;}
+  .fstmain{animation-delay:2.5s;}
+  .scdmain{animation-delay:3s;}
+  .thdmain{animation-delay:3.5s;}
+  .fstdessert{animation-delay:4s;}
+  .scddessert{animation-delay:4.5s;}
+  .thddessert{animation-delay:5s;}
+  
+  
+  
+  .option{
+    display:flex;
+    justify-content: space-between;
+    width:28vw;
+    @include breakpoints(pad){
+      width:55vw;
+    }
+    @include breakpoints(mobile){
+      width:85vw;
+      padding:1.2vw 2vw 0 2vw;
+    }
+  }
+  .content{
+    min-width:0;
+    width:24vw;
+    @include breakpoints(pad){
+      width:49vw;
+    }
+    @include breakpoints(mobile){
+      width:75vw;
+    }
+  }
+  
+  .name{
+    padding: 0.25vw 0 0.5vw 0;
+    margin:.8vw 0 .8vw 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+  }
+  
+  .details {
+    padding: 0.2vw 0 0.37vw 0;
+    margin:.6vw 0 .6vw 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    @include breakpoints(mobile) {
+      padding: 0.9vw 0 1.1vw 0;
+    }
+  }
+  
+  .price{
+    padding:2vw .3vw 0 .4vw;
+    width:4vw;
+    @include breakpoints(pad){
+      width:6vw;
+    }
+    @include breakpoints (mobile){
+      width:10vw;
+    }
+  }
+  .check{
+    background-color: $clr-tertiary;
+    color:white;
+    font-size:1.6em;
+    text-align:center;
+    padding: 1.5vw 1.7vw 1.5vw 1.7vw;
+    width:15%;
+    @include breakpoints(pad){
+      padding: 3vw 1.5vw 2.5vw 1.5vw;
+    }
+    @include breakpoints(mobile){
+      padding: 4.7vw 2vw 3vw 2vw;
+      font-size:1.4em;
+    }
+    
+    span{
+     transform:rotate(360deg);
+    }
+  }
+  
+  
+  .course hr {
+    background-color: $clr-tertiary;
+    height: 0.25vw;
+    border: none;
+    position: relative;
+    top: -0.8vw;
+    left: -13vw;
+    width: 3.4vw;
+    @include breakpoints(pad){
+      height:0.5vw;
+      width:6vw;
+      top:-1.2vw;
+      left:-25vw;
+    }
+    @include breakpoints(mobile){
+      height:0.65vw;
+      width:7.5vw;
+      top:-2.2vw;
+      left:-39.3vw;
+    }
+  }
+  

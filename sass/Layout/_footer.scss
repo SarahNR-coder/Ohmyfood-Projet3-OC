@@ -1,0 +1,25 @@
+.stylized {
+    font-family: "Shrikhand", cursive;
+    font-size: 1.2em;
+  }
+  
+  footer {
+    background-color: $clr-grey-dark;
+    padding: 1vw 0 1vw 2vw;
+    color: white;
+    a{
+      color:white;
+      text-decoration: none;
+    }
+    @include breakpoints(mobile) {
+      font-size: 0.8em;
+    }
+  }
+  
+  .fa-utensils {
+    padding: 0 1vw 0 0;
+  }
+  
+  .fa-hands-helping {
+    padding: 0 0.5vw 0 0;
+  }

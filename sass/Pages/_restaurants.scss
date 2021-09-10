@@ -1,0 +1,112 @@
+.restaurants {
+    padding: 2vw 0 0.6vw 3vw;
+  }
+  
+  .option-disposition {
+    display: flex;
+    justify-content: space-around;
+    height: 20vw;
+    @include breakpoints(pad){
+      flex-wrap:wrap;
+      height:80vw;
+    }
+    @include breakpoints(mobile) {
+      flex-direction: column;
+      align-items: center;
+      height: 300vw;
+    }
+  }
+  .option {
+    width: 20%;
+    height: 15vw;
+    position: relative;
+    @include box-shadow;
+    border-radius: 2vw;
+    @include breakpoints (pad){
+      width:47%;
+      height:30vw;
+    }
+    @include breakpoints(mobile) {
+      width: 90%;
+      height: 63vw;
+      border-radius: 3.5vw;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 1.7vw 1.7vw 0 0;
+        @include breakpoints (pad) {
+          height:72%;
+        }
+        @include breakpoints(mobile) {
+          border-radius: 3.5vw 3.5vw 0 0;
+        }
+      }
+    }
+  }
+  
+  .option__down {
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoints (pad){
+      justify-content:space-between;
+      height:28%;
+      margin:0 4vw 0 2.1vw;
+    }
+    @include breakpoints(mobile) {
+      margin: 0 6.5vw 0 4vw;
+    }
+  }
+  
+  .fa-heart-o {
+    font-size: 1.5em;
+    &:hover {
+      animation: heart 1000ms ease-in-out 0s both;
+      background-image: linear-gradient(
+        to bottom right,
+        $clr-secondary,
+        $clr-primary
+      );
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+  
+  .option__description h3 {
+    margin: 0;
+    padding: 0.2vw;
+  }
+  
+  .option__description p {
+    margin: 0;
+    padding: 0.2vw;
+  }
+  
+  .new {
+    background: $clr-tertiary;
+    color: darken($clr-tertiary, 40);
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    position: absolute;
+    right: 0.9vw;
+    top: 0.9vw;
+    @include breakpoints(pad){
+      padding: 1.2vw 2.5vw 1.2vw 2.5vw;
+      right: 1.8vw;
+      top:1.8vw;
+    }
+    @include breakpoints(mobile) {
+      font-size: 0.8em;
+      padding: 1.8vw 3.8vw 1.8vw 3.8vw;
+      right: 2.6vw;
+      top: 2.6vw;
+    }
+  }
+  
+  
