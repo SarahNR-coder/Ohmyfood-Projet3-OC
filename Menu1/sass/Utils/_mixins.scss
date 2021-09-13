@@ -1,5 +1,5 @@
 @mixin box-shadow {
-  box-shadow: 0 4px 5px 0 #bfbfbf, 0 6px 20px 0 #cccccc;
+  box-shadow:0 4px 5px 0 #bfbfbf, 0 6px 20px 0 #cccccc;
 }
 @mixin box-shadow-plus {
   box-shadow: 0.1vw 0.3vw 0.6vw $clr-grey-dark, 0.08vw 0.22vw .3vw $clr-grey-light;
